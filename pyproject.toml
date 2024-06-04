@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "finance"
+version = "0.1.0"
+description = ""
+authors = ["Manoj Baishya <manojbaishya@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.4"
+scipy = "^1.13.1"
+pandas = "^2.2.2"
+seaborn = "^0.13.2"
+matplotlib = "^3.9.0"
+statsmodels = "^0.14.2"
+modelx = "^0.25.0"
+faker = "^25.4.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
