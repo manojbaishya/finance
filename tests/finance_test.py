@@ -5,20 +5,20 @@ from faker.providers.person import Provider
 from finance.sample import NameGenerator
 
 
+class MockFaker:
+    def first_name_male(self):
+        return "John"
+
+    def last_name_male(self):
+        return "Doe"
+
+    def first_name_female(self):
+        return "Joanna"
+
+    def last_name_female(self):
+        return "Taylor"
+
 def test_get_name(monkeypatch):
-
-    class MockFaker:
-        def first_name_male(self):
-            return "John"
-
-        def last_name_male(self):
-            return "Doe"
-
-        def first_name_female(self):
-            return "Joanna"
-
-        def last_name_female(self):
-            return "Taylor"
 
     mock_faker = MockFaker()
 
